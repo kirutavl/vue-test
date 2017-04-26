@@ -1,0 +1,45 @@
+<div class="application-root">
+<form action="" class="form form_name_login fn-login login-form" autocomplete="off" novalidate>
+  <div class="form-messages fn-form-messages"></div>
+  <p class="form_name_login__title">{{msg}}</p>
+  <div class="form__fieldset">
+      <div class="field field_name_username fn-validate" data-validation-type="userName">
+        <label for="userName">Login</label>
+          <div class="field__control">
+              <input autocomplete="new-login"
+                     autocorrect="off"
+                     type="text"
+                     name="userName"
+                     class="fn-user-name username"
+                     autocapitalize="none"
+                     spellcheck="false">
+          </div>
+      </div>
+
+      <div class="field field_name_password fn-validate" data-validation-type="password">
+        <label for="password">Password</label>
+          <div class="field__control">
+              <input autocomplete="new-password"
+                     type="password"
+                     name="password">
+          </div>
+      </div>
+
+      <div class="field field_name_remember-me">
+          <div class="field__control">
+              <input type="checkbox"
+                     name="rememberme"
+                     id="rememberme"
+                     value="1">
+              <span class="field__control-label">
+                  <label for="rememberme">Remember me</label>
+              </span>
+          </div>
+      </div>
+  </div>
+
+  <div class="login-form__actions">
+      <button class="btn fn-login-btn btn_type_popup-login" v-on:click="doSomething">Login</button>
+  </div>
+</form>
+</div>
